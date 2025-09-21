@@ -38,7 +38,7 @@ export default function Contact() {
             Get in <span className="text-red-600">Touch</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to transform your healthcare organization with AI? Let's discuss how RedTest AI
+            Ready to transform your healthcare organization with AI? Let&apos;s discuss how RedTest AI
             can help you achieve your goals.
           </p>
         </motion.div>

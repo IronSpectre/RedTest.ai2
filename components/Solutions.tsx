@@ -7,7 +7,6 @@ import {
   FileText,
   BarChart3,
   Brain,
-  Heart,
   Activity,
   Pill,
   ArrowRight
