@@ -19,7 +19,6 @@ import {
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Image from 'next/image';
 
 export default function FounderPage() {
   const achievements = [
@@ -115,7 +114,7 @@ export default function FounderPage() {
                   <div className="absolute -bottom-6 -right-6 bg-red-600 text-white rounded-2xl p-6 shadow-xl">
                     <Quote className="h-8 w-8 mb-2" />
                     <p className="text-sm italic">
-                      "AI isn&apos;t just technology; it&apos;s hope for millions waiting for better healthcare"
+                      &ldquo;AI isn&apos;t just technology; it&apos;s hope for millions waiting for better healthcare&rdquo;
                     </p>
                   </div>
                 </div>
