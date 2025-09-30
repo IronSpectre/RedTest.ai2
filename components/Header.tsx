@@ -17,11 +17,11 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { label: 'About', href: '#about' },
+    { label: 'About', href: '/#about' },
     { label: 'Founder', href: '/founder' },
-    { label: 'Solutions', href: '#solutions' },
-    { label: 'Technology', href: '#technology' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Solutions', href: '/#solutions' },
+    { label: 'Technology', href: '/#technology' },
+    { label: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -30,10 +30,11 @@ export default function Header() {
     }`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <motion.div
+          <motion.a
+            href="/"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 cursor-pointer"
           >
             <Brain className="h-8 w-8 text-red-600" />
             <span className="text-2xl font-bold">
@@ -41,7 +42,7 @@ export default function Header() {
               <span className="text-gray-800">Test</span>
               <span className="text-red-400">.ai</span>
             </span>
-          </motion.div>
+          </motion.a>
 
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
@@ -56,7 +57,8 @@ export default function Header() {
                 {item.label}
               </motion.a>
             ))}
-            <motion.button
+            <motion.a
+              href="/#contact"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4 }}
@@ -64,7 +66,7 @@ export default function Header() {
             >
               <span>Get Started</span>
               <ChevronRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
+            </motion.a>
           </div>
 
           <button
@@ -92,9 +94,9 @@ export default function Header() {
                 {item.label}
               </a>
             ))}
-            <button className="mt-4 w-full bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors">
+            <a href="/#contact" className="mt-4 w-full bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors block text-center">
               Get Started
-            </button>
+            </a>
           </motion.div>
         )}
       </nav>

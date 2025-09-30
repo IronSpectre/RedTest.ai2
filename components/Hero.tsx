@@ -51,13 +51,13 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
-            <button className="bg-red-600 text-white px-8 py-4 rounded-full hover:bg-red-700 transition-all duration-200 flex items-center justify-center space-x-2 group text-lg font-semibold shadow-lg hover:shadow-xl">
+            <a href="/#solutions" className="bg-red-600 text-white px-8 py-4 rounded-full hover:bg-red-700 transition-all duration-200 flex items-center justify-center space-x-2 group text-lg font-semibold shadow-lg hover:shadow-xl">
               <span>Explore Our Solutions</span>
               <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="bg-white text-red-600 px-8 py-4 rounded-full border-2 border-red-600 hover:bg-red-50 transition-all duration-200 text-lg font-semibold shadow-lg hover:shadow-xl">
+            </a>
+            <a href="https://lebn.ai" target="_blank" rel="noopener noreferrer" className="bg-white text-red-600 px-8 py-4 rounded-full border-2 border-red-600 hover:bg-red-50 transition-all duration-200 text-lg font-semibold shadow-lg hover:shadow-xl">
               Learn More About Lebn AI
-            </button>
+            </a>
           </motion.div>
 
           <motion.div

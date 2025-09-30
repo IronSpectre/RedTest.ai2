@@ -126,10 +126,10 @@ export default function Solutions() {
             Our flagship platform that integrates all our AI solutions into a unified,
             powerful system for comprehensive healthcare management.
           </p>
-          <button className="bg-white text-red-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors inline-flex items-center space-x-2">
+          <a href="https://lebn.ai" target="_blank" rel="noopener noreferrer" className="bg-white text-red-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors inline-flex items-center space-x-2">
             <span>Explore Lebn AI</span>
             <ArrowRight className="h-5 w-5" />
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>
